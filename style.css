@@ -1,0 +1,28 @@
+* {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.home-index p {
+  font-size: 24px;
+}
+.home-index-div-1 {
+  text-align: center;
+}
+.home-index-ibutton-1 {
+  text-align: center;
+  background-color: black;
+  border: none;
+  font-size: 37px;
+  border-radius: 10px;
+  color: white;
+  padding: 0px 35px 10px 35px;
+  transition-duration: 200ms;
+  top: 5em;
+  margin: 0px 15px;
+  position: relative;
+}
+.home-index-ibutton-1:hover {
+  cursor: pointer;
+  background-color: grey;
+  color: black;
+  transform: translateY(-3px);
+}

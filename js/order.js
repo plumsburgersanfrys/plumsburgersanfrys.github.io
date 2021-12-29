@@ -50,9 +50,7 @@ var mealPriceTotal = mealPrice * mealsAmount;
 var priceTotal = burgerPriceTotal + mealPriceTotal + drinkPriceTotal;
 console.log(priceTotal);
 
-var orderbutton = document.getElementById('orderburger')
-
-function orderButtonIsPressed() {
-  if (document.getElementById('orderbutton').value == "Order") document.getElementById('orderbutton').value = "Ordered";
-  else document.getElementById('orderbutton').value = "Order";
+function orderButtonIsPressed(obj) {
+    if (obj.value == "Order") obj.value = "Ordered";
+    else obj.value = "Order";
 }

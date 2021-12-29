@@ -9,6 +9,13 @@
     <meta name="og:description" content="We dont sell hot fries, we sell hot guys.">
     <meta content="#00FF00" data-react-helmet="true" name="theme-color" />
     <title>Plums Burgers and Frys</title>
+    <script>
+      function orderButtonIsPressed() {
+        if (this.value == "Order") this.value = "Ordered";
+        else this.value = "Order";
+        console.log('hello');
+      }
+    </script>
   </head>
   <body class="home-index">
     <div>
@@ -17,8 +24,8 @@
         <p style="font-size: larger;">"We dont sell hot fries, we sell hot guys."</p>
         <br>
         <div class="home-index-ibutton-1-parent">
+          <a href="order" class="home-index-ibutton-1 home-index-button-order-1">Order</a>
           <input type="button" value="Menu" class="home-index-ibutton-1 home-index-button-menu-1" onclick="this.value='LOL imagine'">
-          <input type="button" value="Order" class="home-index-ibutton-1 home-index-button-order-1" onclick="this.value='LOL imagine'">
         </div>
       </div>
     </div>

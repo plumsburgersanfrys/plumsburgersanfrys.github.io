@@ -20,6 +20,7 @@
   transform: translateY(-50%);
   margin: 0px 15px;
   position: absolute;
+  text-decoration: none;
 }
 .home-index-ibutton-1:hover {
   cursor: pointer;
@@ -46,4 +47,17 @@
 }
 .home-index-button-menu-1:hover {
   transform: translate(-0%, -4%);
+}
+.orderbutton {
+  background-color: orange;
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 3px;
+  transition-duration: 150ms;
+}
+.orderbutton:hover {
+  background-color: red;
+}
+.orderbutton:active {
+  background-color: lightcoral;
 }

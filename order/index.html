@@ -5,17 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <meta name="og:title" content="Order at Plums Burgers and frys">
+    <meta name="og:description" content="Get your meal today">
+    <meta content="#ff7700" data-react-helmet="true" name="theme-color" />
     <title>Document</title>
-    <script src="../js/order.js"></script>
   </head>
-  <body>
+  <body style="overflow-x: hidden;">
+    <script src="../js/order.js"></script>
     <div>
-      <div style="text-align: center;">
+      <div style="text-align: left;position: relative;left: 100px;">
         <ul>
           <h1>Burgers</h1>
-          <p>hambrbregur <input type="button" value="Order" name="orderburger" id="orderbutton" onclick="orderButtonIsPressed()"></p><br>
-          <p>booger <input type="button" value="Order" name="orderburger" id="orderbutton" onclick="orderButtonIsPressed()"></p><br>
-          <p>crappy burger <input type="button" value="Order" name="orderburger" id="orderbutton" onclick="orderButtonIsPressed()"></p><br>
+          <p>hambrbregur <input type="button" value="Order" id="1" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
+          <p>booger <input type="button" value="Order" id="2" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
+          <p>crappy burger <input type="button" value="Order" id="3" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
+        </ul>
+        <ul>
+          <h1>Drinks</h1>
+          <p>pop <input type="button" value="Order" id="4" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
+          <p>good dewrinskwa <input type="button" value="Order" id="5" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
+          <p>whiskey <input type="button" value="Order" id="6" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
+          <p>crapy drink <input type="button" value="Order" id="7" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
+        </ul>
+        <ul>
+          <h1>Meals</h1>
+          <p>totaly gud meal <input type="button" value="Order" id="8" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
+          <p>mealalsjminsanfasf <input type="button" value="Order" id="1" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
+          <p>crappy meal <input type="button" value="Order" id="9" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
+          <p>yes meal <input type="button" value="Order" id="10" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
         </ul>
         </div>
     </div>

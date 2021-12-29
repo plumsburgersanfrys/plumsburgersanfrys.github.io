@@ -61,3 +61,40 @@
 .orderbutton:active {
   background-color: lightcoral;
 }
+.order-index-checkout-button {
+  font-size: 24px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  top: 30px;
+  transition-duration: 200ms;
+  background-color: #00b306;
+}
+.order-index-checkout-button:hover {
+  background-color: lime;
+  cursor: pointer;
+}
+.order-index-checkout-process-order-div {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 100px;
+  border: 5px solid gray;
+  border-radius: 4px;
+  background-color: white;
+}
+.order-index-checkout-process-order-progress {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: cadetblue;
+}
+.procreq {
+  opacity: 0;
+  transition-duration: 300ms;
+}

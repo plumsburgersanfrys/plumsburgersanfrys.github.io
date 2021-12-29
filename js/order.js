@@ -54,3 +54,10 @@ function orderButtonIsPressed(obj) {
     if (obj.value == "Order") obj.value = "Ordered";
     else obj.value = "Order";
 }
+function checkoutOrder() {
+  document.getElementById('opaque1').style.opacity = "1";
+  document.getElementById('opaque2').style.opacity = "1";
+  document.getElementById('opaque3').style.opacity = "1";
+  var waitTime = Math.floor((Math.random() * 10000) + 3000)
+  setTimeout(() => {  document.write(`<title>Error</title><p style="text-align: center;">An unknown error occurred whilst trying to complete purchase, try again later.</p>`); }, waitTime);
+}

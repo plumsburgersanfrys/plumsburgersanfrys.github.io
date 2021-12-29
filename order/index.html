@@ -34,7 +34,17 @@
           <p>crappy meal <input type="button" value="Order" id="9" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
           <p>yes meal <input type="button" value="Order" id="10" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
         </ul>
+        <p>-----------------------------------------</p>
+        <h1>Checkout</h1>
+        <br>
+        <input type="checkbox" name="specialorder" id="spocheck">
+        <label for="spocheck">Special Order</label><br>
+        <div>
+          <input type="button" value="Checkout" class="order-index-checkout-button" onclick="checkoutOrder()">
         </div>
+        <div class="order-index-checkout-process-order-div procreq" id="opaque1"><p style="text-align: center;" id="opaque2" class="procreq">Proccessing Request</p><progress id="opaque3" max="100000" class="order-index-checkout-process-order-progress procreq"></progress></div>
+        <br><br>
+      </div>
     </div>
   </body>
 </html>

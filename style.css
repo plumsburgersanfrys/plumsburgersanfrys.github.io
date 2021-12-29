@@ -16,13 +16,34 @@
   color: white;
   padding: 0px 35px 10px 35px;
   transition-duration: 200ms;
-  top: 5em;
+  top: 50%;
+  transform: translateY(-50%);
   margin: 0px 15px;
-  position: relative;
+  position: absolute;
 }
 .home-index-ibutton-1:hover {
   cursor: pointer;
   background-color: grey;
   color: black;
-  transform: translateY(-3px);
+}
+.home-index-ibutton-1-parent {
+  position: absolute;
+  left: 50%;
+  top: 47%;
+  transform: translate(-50%, -50%);
+  margin-top: auto;
+}
+.home-index-button-order-1 {
+  left: 50%;
+  transform: translateX(-0%);
+}
+.home-index-button-menu-1 {
+  right: 100%;
+  transform: translateX(-0%);
+}
+.home-index-button-order-1:hover {
+  transform: translate(-0%, -4%);
+}
+.home-index-button-menu-1:hover {
+  transform: translate(-0%, -4%);
 }

@@ -81,8 +81,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 200px;
-  height: 100px;
+  width: 400px;
+  height: 300px;
   border: 5px solid gray;
   border-radius: 4px;
   background-color: white;
@@ -92,9 +92,41 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: cadetblue;
+}
+.order-index-checkout-process-order-progress[value]::-webkit-progress-bar {
+  background-color: blue;
 }
 .procreq {
   opacity: 0;
   transition-duration: 300ms;
+}
+.order-index-progress-bar-container {
+  height: 8px;
+  background-color: rgb(230, 230, 230);
+  position: relative;
+  margin: 0px 15px;
+  top: 100px;
+  /* border: solid 1pt black; */
+  border-radius: 10px;
+}
+.order-index-progress-bar-fill {
+  position: absolute;
+  height: 100%;
+  background-color: rgb(0, 136, 95);
+  border-radius: 5px;
+  animation: order-index-progress-fill-anim ease-out 3.5s infinite;
+}
+@keyframes order-index-progress-fill-anim {
+  0% {
+    width: 70px;
+    left: 0px;
+  }
+  50% {
+    width: 70px;
+    left: 300px;
+  }
+  100% {
+    width: 70px;
+    left: 0px;
+  }
 }

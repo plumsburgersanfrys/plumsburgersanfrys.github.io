@@ -34,15 +34,25 @@
           <p>crappy meal <input type="button" value="Order" id="9" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
           <p>yes meal <input type="button" value="Order" id="10" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
         </ul>
+        <ul>
+          <h1>Specials</h1>
+          <p>muffin <input type="button" value="Order" id="10" class="orderbutton" onclick="orderButtonIsPressed(this)"></p>
+          <p>5 pancakes <input type="button" value="Order" id="10" class="orderbutton" onclick="orderButtonIsPressed(this)"></p>
+        </ul>
         <p>-----------------------------------------</p>
         <h1>Checkout</h1>
         <br>
-        <input type="checkbox" name="specialorder" id="spocheck">
-        <label for="spocheck">Special Order</label><br>
+        <!--<input type="checkbox" name="specialorder" id="spocheck">
+        <label for="spocheck">Special Order</label><br>-->
         <div>
           <input type="button" value="Checkout" class="order-index-checkout-button" onclick="checkoutOrder()">
         </div>
-        <div class="order-index-checkout-process-order-div procreq" id="opaque1"><p style="text-align: center;" id="opaque2" class="procreq">Proccessing Request</p><progress id="opaque3" max="100000" class="order-index-checkout-process-order-progress procreq"></progress></div>
+        <div class="order-index-checkout-process-order-div procreq" id="opaque1">
+          <p style="position: relative;text-align: center;top: 50px;font-size: 30px;" id="opaque2" class="procreq">Proccessing Request</p>
+          <div class="order-index-progress-bar-container" id="opaque3">
+            <div class="order-index-progress-bar-fill"></div>
+          </div>
+          <!--<progress id="opaque3" max="100000" class="order-index-checkout-process-order-progress procreq"></progress>--></div>
         <br><br>
       </div>
     </div>

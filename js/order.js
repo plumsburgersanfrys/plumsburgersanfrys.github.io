@@ -21,9 +21,11 @@ var mealalsjminsanfasf;
 var crappyMeal;
 var yesMeal;
 
-var burgerPrice = 5.00;
+var burgerPrice = 4.99;
 var drinkPrice = 2.50;
-var mealPrice = 10.00;
+var mealPrice = 9.99;
+var specialPrice = 7.50;
+
 for (entry in allItems) {
   for (entry in burgers) {
     if (entry === true) {
@@ -58,6 +60,6 @@ function checkoutOrder() {
   document.getElementById('opaque1').style.opacity = "1";
   document.getElementById('opaque2').style.opacity = "1";
   document.getElementById('opaque3').style.opacity = "1";
-  var waitTime = Math.floor((Math.random() * 10000) + 3000)
+  var waitTime = Math.floor((Math.random() * 15000) + 6000)
   setTimeout(() => {  document.write(`<title>Error</title><p style="text-align: center;">An unknown error occurred whilst trying to complete purchase, try again later.</p>`); }, waitTime);
 }

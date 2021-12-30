@@ -158,3 +158,37 @@
 .order-index-menu-p-1 p h1 {
   width: 200px;
 }
+.menu-index-div-bg-1 {
+  background-image: url(/src/menubg.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: absolute;
+  width: 1270px;
+  height: 1600px;
+  left: 50%;
+  background-size: 1270px 1600px;
+  transform: translateX(-50%);
+}
+.menu-index-main-1 {
+  font-size: 30px;
+}
+.menu-index-text-1 {
+  position: relative;
+  top: 80px;
+}
+.menu-index-button-np-1 {
+  background-color: rgb(231, 231, 231);
+  padding: 5px;
+  font-size: large;
+  box-shadow: 1px 1px 2px;
+  border: none;
+  color: black;
+  text-decoration: none;
+}
+.menu-index-button-np-1:hover {
+  cursor: pointer;
+}
+.menu-index-button-np-1:active {
+  box-shadow: 0px 0px 0px;
+  transform: translate(1px, 1px);
+}

@@ -57,9 +57,9 @@ function orderButtonIsPressed(obj) {
     else obj.value = "Order";
 }
 function checkoutOrder() {
-  document.getElementById('opaque1').style.opacity = "1";
-  document.getElementById('opaque2').style.opacity = "1";
-  document.getElementById('opaque3').style.opacity = "1";
-  var waitTime = Math.floor((Math.random() * 15000) + 6000)
+  document.getElementById('opaque2').style.opacity = "1"
+  document.getElementById('proccessing-box-order-maindiv').style.animation = "order-index-proccessing-box-anim ease-out 0.6s forwards";
+  document.getElementById('order-progress-value').style.animation = "order-index-progress-fill-anim ease-out 2s infinite";
+  var waitTime = Math.floor((Math.random() * 15000) + 6000);
   setTimeout(() => {  document.write(`<title>Error</title><p style="text-align: center;">An unknown error occurred whilst trying to complete purchase, try again later.</p>`); }, waitTime);
 }

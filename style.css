@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Comic Sans MS";
+  src: url("fonts/COMIC.TTF");
+  src: local("Comic-Sans"), local("Comic Sans"),
+    local("Comic Sans MS") url("fonts/COMIC.TTF"), format("truetype");
+}
+
 * {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
@@ -80,7 +87,7 @@
 .order-index-checkout-process-order-div {
   position: fixed;
   z-index: 1;
-  top: 50%;
+  top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
@@ -88,6 +95,7 @@
   border: 5px solid gray;
   border-radius: 4px;
   background-color: white;
+  /*animation: order-index-proccessing-box-anim ease-out 1s forwards;*/
 }
 .order-index-checkout-process-order-progress {
   position: absolute;
@@ -97,7 +105,7 @@
 }
 .procreq {
   opacity: 0;
-  transition-duration: 300ms;
+  transition-duration: 600ms;
 }
 .order-index-progress-bar-container {
   height: 8px;
@@ -113,7 +121,7 @@
   height: 100%;
   background-color: rgb(0, 136, 95);
   border-radius: 5px;
-  animation: order-index-progress-fill-anim ease-out 3.5s infinite;
+  /* animation: order-index-progress-fill-anim ease-out 3.5s infinite; */
 }
 @keyframes order-index-progress-fill-anim {
   0% {
@@ -127,6 +135,15 @@
   100% {
     width: 70px;
     left: 0px;
+  }
+}
+@keyframes order-index-proccessing-box-anim {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: 50%;
+    opacity: 1;
   }
 }
 .order-index-menu-p-1 p {

@@ -93,9 +93,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.order-index-checkout-process-order-progress[value]::-webkit-progress-bar {
-  background-color: blue;
-}
 .procreq {
   opacity: 0;
   transition-duration: 300ms;

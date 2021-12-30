@@ -51,6 +51,8 @@
 .orderbutton {
   background-color: orange;
   padding: 5px;
+  font-size: 17px;
+  margin-left: 20px;
   border: 1px solid;
   border-radius: 3px;
   transition-duration: 150ms;
@@ -126,4 +128,7 @@
     width: 70px;
     left: 0px;
   }
+}
+.order-index-menu-p-1 p {
+  font-size: 20px;
 }

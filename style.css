@@ -7,6 +7,7 @@
 
 * {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
+  scroll-behavior: smooth;
 }
 .home-index p {
   font-size: 24px;
@@ -60,9 +61,9 @@
   padding: 5px;
   font-size: 17px;
   margin-left: 20px;
-  border: 1px solid;
+  border: none;
   border-radius: 3px;
-  transition-duration: 150ms;
+  transition-duration: 180ms;
 }
 .orderbutton:hover {
   background-color: red;
@@ -77,12 +78,15 @@
   border-radius: 5px;
   position: relative;
   top: 30px;
-  transition-duration: 200ms;
+  transition-duration: 165ms;
   background-color: #00b306;
 }
 .order-index-checkout-button:hover {
-  background-color: lime;
+  background-color: #00e800;
   cursor: pointer;
+}
+.order-index-checkout-button:active {
+  background-color: #00ff00;
 }
 .order-index-checkout-process-order-div {
   position: fixed;
@@ -148,4 +152,9 @@
 }
 .order-index-menu-p-1 p {
   font-size: 20px;
+  width: fit-content;
+  margin-left: 20px;
+}
+.order-index-menu-p-1 p h1 {
+  width: 200px;
 }

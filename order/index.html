@@ -11,46 +11,46 @@
     <title>Order</title>
   </head>
   <body style="overflow-x: hidden;">
-    <script src="../js/order.js"></script>
     <div>
       <div style="text-align: left;position: relative;left: 100px;" class="order-index-menu-p-1">
         <ul>
           <h1>-Burgers-</h1>
-          <p>hambrbregur <input type="button" value="Order" id="1" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
-          <p>booger <input type="button" value="Order" id="2" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
-          <p>crappy burger <input type="button" value="Order" id="3" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
+          <p>hambrbregur <input type="button" value="Order" id="burger1" class="orderbutton burgerorder" onclick="orderButtonIsPressed(this)"></p><br>
+          <p>booger <input type="button" value="Order" id="burger2" class="orderbutton burgerorder" onclick="orderButtonIsPressed(this)"></p><br>
+          <p>crappy burger <input type="button" value="Order" id="burger3" class="orderbutton burgerorder" onclick="orderButtonIsPressed(this)"></p><br>
         </ul>
         <ul>
           <h1>-Drinks-</h1>
-          <p>pop <input type="button" value="Order" id="4" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
-          <p>good dewrinskwa <input type="button" value="Order" id="5" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
-          <p>whiskey <input type="button" value="Order" id="6" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
-          <p>crapy drink <input type="button" value="Order" id="7" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
+          <p>pop <input type="button" value="Order" id="drink4" class="orderbutton drinkorder" onclick="orderButtonIsPressed(this)"></p><br>
+          <p>good dewrinskwa <input type="button" value="Order" id="drink5" class="orderbutton drinkorder" onclick="orderButtonIsPressed(this)"></p><br>
+          <p>whiskey <input type="button" value="Order" id="drink6" class="orderbutton drinkorder" onclick="orderButtonIsPressed(this)"></p><br>
+          <p>crapy drink <input type="button" value="Order" id="drink7" class="orderbutton drinkorder" onclick="orderButtonIsPressed(this)"></p><br>
         </ul>
         <ul>
           <h1>-Meals-</h1>
-          <p>totaly gud meal <input type="button" value="Order" id="8" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
-          <p>mealalsjminsanfasf <input type="button" value="Order" id="1" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
-          <p>crappy meal <input type="button" value="Order" id="9" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
-          <p>yes meal <input type="button" value="Order" id="10" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
+          <p>totaly gud meal <input type="button" value="Order" id="meal8" class="orderbutton mealorder" onclick="orderButtonIsPressed(this)"></p><br>
+          <p>mealalsjminsanfasf <input type="button" value="Order" id="meal9" class="orderbutton mealorder" onclick="orderButtonIsPressed(this)"></p><br>
+          <p>crappy meal <input type="button" value="Order" id="meal10" class="orderbutton mealorder" onclick="orderButtonIsPressed(this)"></p><br>
+          <p>yes meal <input type="button" value="Order" id="meal11" class="orderbutton mealorder" onclick="orderButtonIsPressed(this)"></p><br>
         </ul>
         <ul>
           <h1>-Specials-</h1>
-          <p>muffin <input type="button" value="Order" id="10" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
-          <p>5 pancakes <input type="button" value="Order" id="10" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
-          <p>crappy special <input type="button" value="Order" id="10" class="orderbutton" onclick="orderButtonIsPressed(this)"></p><br>
+          <p>muffin <input type="button" value="Order" id="special12" class="orderbutton specialorder" onclick="orderButtonIsPressed(this)"></p><br>
+          <p>5 pancakes <input type="button" value="Order" id="special13" class="orderbutton specialorder" onclick="orderButtonIsPressed(this)"></p><br>
+          <p>crappy special <input type="button" value="Order" id="special14" class="orderbutton specialorder" onclick="orderButtonIsPressed(this)"></p><br>
         </ul>
-        <p>_____________________________________________</p>
+        <p id="checkout">_____________________________________________</p>
         <br>
         <h1>Checkout</h1>
         <br>
         <!--<input type="checkbox" name="specialorder" id="spocheck">
         <label for="spocheck">Special Order</label><br>-->
+        <p>Total: <span id="moneycount">0</span>$</p>
         <div>
           <input type="button" value="Checkout" class="order-index-checkout-button" onclick="checkoutOrder()">
         </div>
         <div class="order-index-checkout-process-order-div procreq" id="proccessing-box-order-maindiv">
-          <p style="position: relative;text-align: center;top: 50px;font-size: 30px;" id="opaque2" class="procreq">Proccessing Request</p>
+          <p style="position: relative;text-align: center;top: 50px;font-size: 30px;width: 363px;" id="opaque2" class="procreq">Proccessing Request</p>
           <div class="order-index-progress-bar-container" id="opaque3">
             <div class="order-index-progress-bar-fill" id="order-progress-value"></div>
           </div>
@@ -58,5 +58,6 @@
         <br><br>
       </div>
     </div>
+    <script src="../js/order.js"></script>
   </body>
 </html>

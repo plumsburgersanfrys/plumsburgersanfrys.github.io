@@ -246,8 +246,15 @@
   height: 60%;
   background-color: black;
 }
-.job-index-interview-button-1 {
+.job-index-apply-button-1 {
   top: 75%;
   left: 50%;
-  transform: translate(-55%, 264%);
+  transform: translate(-55%, 290%);
+  z-index: 1;
+}
+.job-index-div-apply-space-bottom-1 {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-55%, 290%);
 }

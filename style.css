@@ -247,7 +247,7 @@
   background-color: black;
 }
 .job-index-interview-button-1 {
-  bottom: 1%;
+  top: 75%;
   left: 50%;
-  transform: translateX(-55%);
+  transform: translate(-55%, 264%);
 }

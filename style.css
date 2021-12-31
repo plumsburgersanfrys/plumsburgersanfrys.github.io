@@ -228,6 +228,17 @@
     font-size: 20px;
   }
 }
+@keyframes home-index-text-werehiring-anim-phone {
+  0% {
+    font-size: 17px;
+  }
+  50% {
+    font-size: 19px;
+  }
+  100% {
+    font-size: 17px;
+  }
+}
 .job-index-jobdetails-div-1 {
   position: absolute;
   width: 70%;
@@ -257,4 +268,16 @@
   top: 75%;
   left: 50%;
   transform: translate(-55%, 290%);
+}
+.home-index-button-callus-1 {
+  left: 50%;
+  top: 50%;
+  transform: translate(-58%, 100%);
+  width: fit-content;
+}
+.home-index-button-callus-1:hover {
+  left: 50%;
+  top: 50%;
+  transform: translate(-58%, 96%);
+  width: fit-content;
 }

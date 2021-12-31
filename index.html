@@ -6,33 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico?">
-    <meta name="og:title" content="Plums Burgers and Frys">
+    <meta name="og:title" content="Plums Burgers an Frys">
     <meta name="og:description" content="We dont sell hot fries, we sell hot guys.">
     <meta content="#00FF00" data-react-helmet="true" name="theme-color" />
-    <title>Plums Burgers and Frys</title>
-    <script>
-      function orderButtonIsPressed() {
-        if (this.value == "Order") this.value = "Ordered";
-        else this.value = "Order";
-        console.log('hello');
-      }
-    </script>
+    <title>Plums Burgers an Frys</title>
   </head>
   <body>
     <div>
-      <p class="home-index-text-werehiring-1">looking for a job, <a style="color: #0000ee;" href="job">we're hiring!</a></p>
+      <p id="lookingforajobtext-index-home" class="home-index-text-werehiring-1">looking for a job, <a style="color: #0000ee;" href="job">we're hiring!</a></p>
     </div>
     <div class="home-index">
       <div class="home-index-div-1">
 
-        <p>Plums Burgers and Frys</p>
+        <p>Plums Burgers an Frys</p>
         <p style="font-size: larger;">"We dont sell hot fries, we sell hot guys."</p>
         <br>
         <div class="home-index-ibutton-1-parent">
           <a href="order" class="home-index-ibutton-1 home-index-button-order-1">Order</a>
           <a class="home-index-ibutton-1 home-index-button-menu-1" href="menu">Menu</a>
         </div>
+        <div style="text-align: center;">
+          <a id="home-index-callus-button" class="home-index-ibutton-1 home-index-button-callus-1" href="tel:+18253435214">Call Us</a>
+        </div>
       </div>
     </div>
+    <script src="js/index.js"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   if (!isMobile) {
-    document.getElementById('home-index-callus-button').remove
+    document.getElementById('home-index-callus-button').remove()
 }
 else {
   var lookingforajobtext = document.getElementById('lookingforajobtext-index-home');

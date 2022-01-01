@@ -1,3 +1,7 @@
+:root {
+  --unclicked-link-color: #0000ee;
+}
+
 @font-face {
   font-family: "Comic Sans MS";
   src: url("fonts/COMIC.TTF");
@@ -36,8 +40,9 @@
   padding: 0px 35px 10px 35px;
   transition-duration: 200ms;
   margin: 0px 15px;
-  position: absolute;
+  position: relative;
   text-decoration: none;
+  top: 0px;
 }
 .home-index-ibutton-1-default {
   left: 50%;
@@ -47,29 +52,12 @@
   cursor: pointer;
   background-color: grey;
   color: black;
+  top: -4px;
 }
 .home-index-ibutton-1-parent {
-  position: absolute;
-  left: 50%;
-  top: 47%;
-  transform: translate(-50%, -50%);
-  margin-top: auto;
-}
-.home-index-button-order-1 {
-  left: 50%;
-  top: 50%;
-  transform: translate(0%, -50%);
-}
-.home-index-button-menu-1 {
-  right: 100%;
-  top: 50%;
-  transform: translate(0%, -50%);
-}
-.home-index-button-order-1:hover {
-  transform: translate(-0%, -54%);
-}
-.home-index-button-menu-1:hover {
-  transform: translate(-0%, -54%);
+  position: relative;
+  top: 200px;
+  height: 100px;
 }
 .orderbutton {
   background-color: orange;
@@ -280,4 +268,9 @@
   top: 50%;
   transform: translate(-58%, 96%);
   width: fit-content;
+}
+.home-index-section-1 {
+  position: relative;
+  top: 500px;
+  height: 100px;
 }

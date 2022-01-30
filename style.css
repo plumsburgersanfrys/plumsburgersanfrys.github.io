@@ -52,7 +52,7 @@
   cursor: pointer;
   background-color: grey;
   color: black;
-  top: -4px;
+  /* transform: translate(-90px, 175px); */
 }
 .home-index-ibutton-1-parent {
   position: relative;
@@ -149,6 +149,7 @@
     top: 100%;
   }
   100% {
+    display: block;
     top: 50%;
     opacity: 1;
   }
@@ -246,6 +247,7 @@
   background-color: black;
 }
 .job-index-apply-button-1 {
+  position: absolute;
   top: 75%;
   left: 50%;
   transform: translate(-55%, 290%);
@@ -258,17 +260,16 @@
   transform: translate(-55%, 290%);
 }
 .home-index-button-callus-1 {
-  left: 50%;
-  top: 50%;
+  position: relative;
+  top: 300px;
   transform: translate(-58%, 100%);
   width: fit-content;
 }
-.home-index-button-callus-1:hover {
-  left: 50%;
-  top: 50%;
+/* .home-index-button-callus-1:hover {
+  top: 296px;
   transform: translate(-58%, 96%);
   width: fit-content;
-}
+} */
 .home-index-section-1 {
   position: relative;
   top: 500px;
